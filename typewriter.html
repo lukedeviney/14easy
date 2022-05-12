@@ -1,0 +1,78 @@
+<style>
+    .breaker{
+    display:none
+    }
+        .type-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .type-container{
+            width:720px;
+        background-color:#3e5b48
+        
+        }
+    #typewriter-text{
+    color:white;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:4px;
+    }
+        .type-outer{
+        position:relative;
+        z-index:3;
+            background-color: #3e5b48;
+            padding-top:50px;
+            padding-bottom:50px;
+            padding-left:20px;
+            padding-right:20px;
+        }
+    
+        .type-text{
+            margin:0;
+            color:white;
+        }
+        @media only screen and (max-width: 629px) {
+            .type-text{
+                font-size:22px;
+    text-align:center;
+    line-height:1.5em;
+            }
+    .breaker{
+    display:block
+    }
+    .subber{
+        text-align: center;
+    }
+    
+    
+        }
+        </style>
+        <div class="type-outer">
+        <div class="type-flex">
+            <div class="type-container">
+                <h2 class="type-text">14 Easy days to<br class="breaker" /><span id="typewriter-text"></span></h2>
+                <p style="color:white" class="subber">Our system is simple, 14 days, easy changes, to help reach your goals. Each system delivers results and nutrients that will get you back on track in no time. Browse our bundles and start your 14 Easy journey today!</p>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+        <script>
+        var app = document.getElementById('typewriter-text');
+        
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+        
+        typewriter.typeString('more confidence.')
+            .pauseFor(800)
+            .deleteAll()
+            .typeString('a smaller waist.')
+            .pauseFor(800)
+            .deleteAll()
+            .typeString('your health goals.')
+            .pauseFor(800)
+            .start();
+        </script>
+    <img src="https://secure.adnxs.com/px?id=1578429&seg=29865062&t=2" width="1" height="1" />
